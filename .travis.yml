@@ -1,0 +1,9 @@
+sudo: requiered
+services:
+   - docker
+script:
+  - docker build -t cheztone/jenkins .
+  - if [ "$TRAVIS_BRANCH" == "master" ]; then
+      docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD";
+      docker push cheztone/jenkins;
+      fi
