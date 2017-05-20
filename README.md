@@ -1,4 +1,4 @@
-# Jenkins Docker image [![Build Status](https://travis-ci.org/ChezTone/jenkins.svg?branch=master)](https://travis-ci.org/ChezTone/jenkins)
+# Jenkins Docker image  [![Build Status](https://travis-ci.org/ChezTone/jenkins.svg?branch=master)](https://travis-ci.org/ChezTone/jenkins)
 
 The Jenkins Continuous Integration and Delivery server.
 
