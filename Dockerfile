@@ -52,12 +52,6 @@ RUN curl -fsSL ${JENKINS_URL} -o /usr/share/jenkins/jenkins.war \
 ENV JENKINS_UC https://updates.jenkins.io
 RUN chown -R ${user} "$JENKINS_HOME" /usr/share/jenkins/ref
 
-# for main web interface:
-EXPOSE 8080
-
-# will be used by attached slave agents:
-EXPOSE 50000
-
 ENV COPY_REFERENCE_FILE_LOG $JENKINS_HOME/copy_reference_file.log
 
 USER ${user}
